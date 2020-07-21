@@ -1,0 +1,41 @@
+.App {
+    background-color: #9e9e9e;
+    height: 100vh;
+}
+
+.show {
+    opacity: 1;
+}
+
+.hide {
+    opacity: 0;
+}
+/* 入场动画开始前的一瞬间 */
+.fade-enter, .fade-appear { 
+    opacity: 0;
+}
+/* 入场动画执行的第二个时刻到入场动画执行完成前一个时刻 */
+.fade-enter-active, .fade-appear-active {
+    opacity: 1;
+    transition: opacity 1s ease-in;
+}
+/* 入场动画执行完成后 */
+.fade-enter-done {
+    opacity: 1;
+}
+
+
+/* 出场动画执行的第一个时刻 */
+.fade-exit {
+    opacity: 1;
+}
+/* 出场动画执行的第二个时刻到出场动画执行完成前一个时刻 */
+.fade-exit-active {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+/* 出场动画执行完成后 */
+.fade-exit-done {
+    opacity: 0;
+}
+
